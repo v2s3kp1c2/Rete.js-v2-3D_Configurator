@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "position": [-321.5797896297496, -154.53147382727047],
+      "name": "Color",
+      "color": "green"
+    },
+    {
+      "id": 2,
+      "position": [265.43772511895156, -117.29720249705136],
+      "name": "Body"
+    },
+    {
+      "id": 3,
+      "position": [259.34111686967464, 173.81696799427684],
+      "name": "Wheels"
+    },
+    {
+      "id": 4,
+      "position": [-32.46697371762214, 25.55852338981346],
+      "name": "Mix"
+    },
+    {
+      "id": 5,
+      "color": "yellow",
+      "position": [-318.3147357568389, 211.9209045149937],
+      "name": "Color"
+    }
+  ],
+  "connections": [
+    {
+      "source": 1,
+      "sourceOutput": "color",
+      "target": 4,
+      "targetInput": "a"
+    },
+    {
+      "source": 4,
+      "sourceOutput": "result",
+      "target": 2,
+      "targetInput": "color"
+    },
+    {
+      "source": 4,
+      "sourceOutput": "result",
+      "target": 3,
+      "targetInput": "color"
+    },
+    {
+      "source": 5,
+      "sourceOutput": "color",
+      "target": 4,
+      "targetInput": "b"
+    }
+  ]
+}
